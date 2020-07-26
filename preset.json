@@ -1,5 +1,6 @@
 {
     "useConfigFiles": false,
+    "cssPreprocessor": "sass",
     "plugins": {
         "@dcloudio/vue-cli-plugin-uni": {
             "version": "^2.0.0-22420190823018"
