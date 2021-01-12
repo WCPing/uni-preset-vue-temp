@@ -1,6 +1,6 @@
 <template>
-    <view class="mine-page">
-        Home
-    </view>
+  <view class="mine-page">
+    Home
+  </view>
 </template>
-<script lang="ts" src=".
+<script lang="ts" src="./Home.ts"></script>

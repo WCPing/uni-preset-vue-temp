@@ -34,6 +34,9 @@ async function generate (dir, files, base = '', rootOptions = {}) {
 module.exports = (api, options, rootOptions) => {
   api.extendPackage(pkg => {
     return {
+      scripts: {
+        'lint': 'vue-cli-service lint --fixed'
+      },
       dependencies: {
         'regenerator-runtime': '^0.12.1',// 锁定版本，避免高版本在小程序中出错
         '@dcloudio/uni-helper-json': '*',
@@ -47,7 +50,15 @@ module.exports = (api, options, rootOptions) => {
         'mini-types': '*',
         '@babel/plugin-syntax-typescript': '^7.2.0',
         '@vue/cli-plugin-typescript': '*',
-        'typescript': api.hasPlugin('eslint') ? '~3.1.1' : '^3.0.0'
+        'typescript': api.hasPlugin('eslint') ? '~3.1.1' : '^3.0.0',
+        '@typescript-eslint/eslint-plugin': '^2.33.0',
+        '@typescript-eslint/parser': '^2.33.0',
+        '@vue/cli-plugin-eslint': '^4.4.4',
+        '@vue/eslint-config-prettier': '^6.0.0',
+        '@vue/eslint-config-typescript': '^5.0.2',
+        'eslint': '^6.7.2',
+        'eslint-plugin-prettier': '^3.1.4',
+        'eslint-plugin-vue': '^6.2.2'
       }
     }
   })

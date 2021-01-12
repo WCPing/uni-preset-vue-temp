@@ -7,12 +7,6 @@
 			}
 		},
 		{
-			"path": "pages/category/Category",
-			"style": {
-				"navigationBarTitleText": "分类"
-			}
-		},
-		{
 			"path": "pages/shopCart/ShopCart",
 			"style": {
 				"navigationBarTitleText": "购物车"

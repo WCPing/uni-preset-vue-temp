@@ -5,9 +5,8 @@ import storagePlugin from './StoragePlugin'
 
 Vue.use(Vuex)
 
-export interface  State {
-
-}
+// eslint-disable-next-line @typescript-eslint/no-empty-interface
+export interface State {}
 
 const store = new Vuex.Store({
   plugins: [storagePlugin],

@@ -124,4 +124,15 @@ export default class NumberUtil {
     static toMax(val: number, max: number = 99) {
         return val > max ? `${max}+` : val
     }
+
+    // 判断数字有几位小数
+    static pointNum(n: number) {
+        const nArr = n.toString().split('.')
+        return nArr.length === 1 ? 0 : nArr[1].length
+    }
+
+    // 小数去尾，保留两位小数
+    static toFloor(n: number, l: number = 2) {
+        return Math.floor(n * Math.pow(10, l)) / Math.pow(10, l);
+    }
 }

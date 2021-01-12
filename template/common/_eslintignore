@@ -1,0 +1,5 @@
+node_modules/*
+dist/*
+src/components/uni-*
+src/components/mescroll-uni
+src/utils/*
