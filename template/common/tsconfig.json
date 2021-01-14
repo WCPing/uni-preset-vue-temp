@@ -12,10 +12,11 @@
     "experimentalDecorators": true,
     "strictPropertyInitialization": false,
     "sourceMap": true,
+    "skipLibCheck": true,
     "baseUrl": ".",
     "types": [
       "webpack-env",
-      "@dcloudio/types/uni-app"
+      "@dcloudio/types"
     ],
     "paths": {
       "@/*": [
